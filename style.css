@@ -1,0 +1,317 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --navbar-height: 59px;
+   background-color: rgb(19, 18, 18);
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:  rgb(217, 186, 133);
+    
+}
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    height: 543px;
+    margin-top: 210px;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background:rgba(0, 0, 0, 0.7) url('../bg1.jpg') no-repeat center center/cover;
+    height: 800px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:3;
+    background-blend-mode: darken;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+}
+#home h1 span{
+    color: rgb(205, 164, 94);
+}
+
+#home h2{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+    background-color: rgb(19, 18, 18);
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+    
+} 
+#Menu{
+    background-color: rgb(23, 21, 21);
+}
+#Menu .menutab p{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: rgb(205, 164, 94);
+    margin: 0px;
+    padding: 17px 171px;
+}
+
+#Menu .menutab h2{
+    color: white;
+    padding: 17px 171px;
+}
+#Menu .menutab img{
+  height: 100%;
+  width: 100%;
+  margin-bottom: 35px;
+  margin-top: 25px;
+}
+#Special{
+   background-color: rgb(19, 18, 18);
+   
+}
+.recipe {
+    background: url('../food.jfif') ;
+   display: block;
+   margin: auto;
+   height: 700px;
+   width: 1000px;
+   padding-top: 15px;
+  animation: recipe 10s infinite ;
+}
+
+@keyframes recipe {
+    0%{background: url('../food.jfif') no-repeat center;}
+    25%{background: url('../food4.png');}
+    75%{background: url('../food1.png');}
+    100%{background: url('../food3.png');}
+}
+
+#Special .re h2{
+    color: white;
+    padding: 17px 171px;
+}
+
+#Special .re p{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: rgb(205, 164, 94);
+    margin: 0px;
+    padding: 17px 171px;
+}
+
+
+
+#Chef .cook h2{
+    color: white;
+    padding: 17px 171px;
+}
+
+#Chef .cook p{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: rgb(205, 164, 94);
+    margin: 0px;
+    padding: 17px 171px;
+}
+
+.ch{
+    display: flex;
+   margin: 13px 40px;
+   padding: 12px 15px;
+   border-radius: 28px;
+ /*  background: #f2f2f2;*/
+} 
+
+.ch img{
+    height: 260px;
+    margin: auto;
+    display: block;
+}
+
+.che {
+    display: flex;
+    
+    margin: 15px 32px;
+    padding: 1px 23px;
+    font-family: "Playfair Display", serif;
+    color: rgb(205, 164, 94);
+    font-size: 30px;
+
+}
+.che h2{
+    padding: 0px 148px;
+    
+}
+
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../book.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box .si{
+      margin-top: 8px;
+      width: 50%;
+      margin-left: 150px;
+}
+#contact-box .si :hover{
+    color: rgb(205, 164, 94);
+    background-color: black;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    color: white;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
